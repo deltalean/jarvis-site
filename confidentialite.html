@@ -10,7 +10,7 @@
 <body>
   <main>
     <h1>Politique de confidentialité</h1>
-    <p class="sous-titre">Jarvis, assistant personnel privé · Mise à jour : 25 octobre 2026</p>
+    <p class="sous-titre">Jarvis, assistant personnel privé · Mise à jour : 26 octobre 2026</p>
 
     <h2>Qui utilise Jarvis</h2>
     <p>Jarvis est un assistant personnel à usage strictement privé. Seul son utilisateur peut l'autoriser à accéder à
@@ -18,23 +18,31 @@
 
     <h2>Données consultées</h2>
     <p>Avec l'autorisation explicite de l'utilisateur, Jarvis accède <strong>en lecture seule</strong> aux données
-    d'agenda de ses comptes Google (droit <code>calendar.readonly</code>) : titres, horaires, lieux et participants des
-    événements, y compris ceux des agendas partagés avec l'utilisateur.</p>
-    <p>Jarvis ne modifie, ne crée et ne supprime aucun événement.</p>
+    suivantes de ses comptes Google :</p>
+    <ul>
+      <li><strong>Agenda</strong> (droit <code>calendar.readonly</code>) : titres, horaires, lieux et participants des
+      événements, y compris ceux des agendas partagés avec l'utilisateur ;</li>
+      <li><strong>Gmail</strong> (droit <code>gmail.readonly</code>) : en-têtes, contenu et pièces jointes des
+      messages reçus et envoyés.</li>
+    </ul>
+    <p>Jarvis ne modifie, ne crée et ne supprime aucun événement ni aucun message, et n'envoie aucun message.</p>
 
     <h2>Utilisation</h2>
-    <p>Ces données servent uniquement à présenter à l'utilisateur un résumé de son emploi du temps et à lui signaler
-    des points d'attention (conflits d'horaires, délais de déplacement). Elles ne servent à aucune autre fin : ni
-    publicité, ni profilage, ni revente, ni entraînement de modèles d'intelligence artificielle.</p>
+    <p>Ces données servent uniquement à des fonctions destinées à l'utilisateur lui-même : résumé de son emploi du
+    temps, points d'attention (conflits d'horaires, délais de déplacement), suivi des sujets en cours et des actions
+    qui en découlent. Elles ne servent à aucune autre fin : ni publicité, ni profilage, ni revente, ni entraînement de
+    modèles d'intelligence artificielle.</p>
 
     <h2>Partage</h2>
     <p>Aucune donnée n'est vendue ni partagée avec des tiers. Les résumés sont transmis à l'utilisateur seul, par la
-    messagerie qu'il a choisie.</p>
+    messagerie qu'il a choisie. Pour analyser certains messages, Jarvis peut faire appel à un service de modèle de
+    langage agissant comme sous-traitant, dans des conditions qui excluent l'entraînement de modèles sur ces données ;
+    les données les plus sensibles sont traitées localement.</p>
 
     <h2>Conservation et sécurité</h2>
-    <p>Les données d'agenda sont lues au moment du traitement et ne sont pas conservées au-delà. Seuls des compteurs
-    techniques (nombre d'événements, d'alertes) sont gardés. Les autorisations d'accès sont stockées chiffrées dans un
-    gestionnaire de secrets.</p>
+    <p>Les données d'agenda sont lues au moment du traitement et ne sont pas conservées au-delà. Le contenu brut des
+    messages est conservé au plus 90 jours, puis supprimé ; seuls restent des résumés et les actions qui en découlent,
+    pour l'utilisateur. Les autorisations d'accès sont stockées chiffrées dans un gestionnaire de secrets.</p>
 
     <h2>Révocation</h2>
     <p>L'utilisateur peut retirer à tout moment l'accès de Jarvis depuis
